@@ -9,6 +9,7 @@ app.use(bodyparser.json())
 app.use(express.static(path.join(__dirname,'static')))
 
 app.get('/',(req,res)=>{
+    console.log(__dirname)
     res.sendFile(path.join(__dirname,'static','main','index.html'))
 })
 app.get('/getapps',processor.getApps)
