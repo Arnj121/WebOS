@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebOS</title>
+    <link href="http://localhost:2000/main/style.css" rel="stylesheet" type="text/css" />
+    <link href="http://localhost:2045/public/fontawesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="root">
+        <!-- THIS IS WHERE THE APP RUNS-->
+        <div id="app-runner"></div>
+        <div id="taskbar" class="flex-row">
+            <div id="app-pinned" class="flex-row">
+                <i id="run-app" class="fal scale15 fa-plus-circle app-pinned-obj"></i>
+            </div>
+            <div id="app-drawer" class="flex-row">
+                <i class="fal fa-home scale15 app-drawer-obj" id="home"></i>
+                <i class="fal fa-search scale15 app-drawer-obj hidable" id="search" style="display: none"></i>
+            </div>
+            <div id="date-time" class="flex-row">
+                <label id="time"><i class="fal fa-clock" style="margin: auto 5px;"></i>00 : 00 : 00</label>
+                <label style="margin: auto 2px" id="date-time-sidekick">|</label>
+                <label id="date"><i class="fal fa-calendar-alt" style="margin: auto 5px;"></i> 00 XXX 0000</label>
+                <label style="margin: auto 2px">|</label>
+                <i class="fal fa-user" style="margin: auto 10px auto 5px" id="user-profile"></i>
+                <label id="notification-btn" style="margin: auto 5px"><i class="fal fa-bell"></i></label>
+            </div>
+        </div>
+    </div>
+    <div id="app-view">
+        <div class="flex-row" style="justify-content: center;height: 50px;width: 100%;margin-top: 10px">
+            <input type="text" id="search-input" placeholder="Search">
+        </div>
+        <div class="flex-row" style="height: 100%;width: 100%;">
+            <div class="flex-column-reverse" id="app-view-left" style="margin: auto auto 0 0;width: 7%;height: 80%;padding-bottom: 10px">
+                <i class="fal fa-cog scale15" id="settings" style="margin: 10px auto;"></i>
+                <i class="fal fa-tasks-alt scale15" id="taskmanager" style="margin: 10px auto"></i>
+                <i class="fab fa-app-store scale15" id="appstore" style="margin: 10px auto"></i>
+            </div>
+            <div class="flex-row" id="app-view-right" style="height: 85%;width: 90%;flex-wrap: wrap;margin: auto 0 0 auto;">
+            </div>
+        </div>
+    </div>
+    <div id="run-app-window" class="flex-column">
+        <div id="run-app-window-bar" class="flex-row" style="justify-content: space-between;height: 30px;">
+            <label style="margin: auto 0"><i class="fal fa-running" style="margin: auto 5px"></i> App Runner</label>
+            <i class="fal fa-times" style="margin: auto 5px" id="close-run-app"></i>
+        </div>
+        <div class="flex-row" style="justify-content: center;height: 100%">
+            <input type="text" id="run-app-input" placeholder="App name">
+            <i class="fal fa-arrow-right" style="margin: auto 10px;" id="run"></i>
+        </div>
+    </div>
+    <div id="user-profile-window">
+        <div id="signup-window" style="display: none;">
+            <i class="fal fa-arrow-right f-2x" id="login-window-btn" style="margin: 10px auto"></i>
+            <input type="text" id="signup-username" placeholder="Username">
+            <input type="email" id="signup-email" placeholder="Email">
+            <input type="password" id="signup-password" placeholder="Password">
+            <label id="signup-btn">I'm in</label>
+            <label id="signup-error" style="font-size: small;margin: 0 auto 5px auto;color: #ff3003;display: none">Oops! something went wrong</label>
+        </div>
+        <div id="login-window">
+            <i class="fal fa-arrow-left f-2x" id="signup-window-btn" style="margin: 10px auto"></i>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <label id="login-btn">Go<i class="fal fa-chevron-right" style="margin: auto 5px"></i></label>
+            <label id="login-error" style="font-size: small;margin: auto;color: #ff3003;display: none">Oops! something went wrong</label>
+        </div>
+        <div style="display: none; " id="user-info-window">
+            <i class="fal fa-user fa-2x" style="margin: 10px auto;"></i>
+            <label id="username"></label>
+            <label id="user-settings-save"><i class="fal fa-save" style="margin: auto 5px"></i>save</label>
+            <label id="logout"><i class="fal fa-sign-out-alt" style="margin:auto 5px"></i>I'm out</label>
+        </div>
+    </div>
+    <div id="notification-window">
+        <div style="display: flex;flex-direction: row;justify-content: space-between">
+            <label style="font-size: large;margin: 10px 20px"><i class="fal fa-bell" style="margin-right: 5px"></i>Notifications</label>
+            <label id='clear-all' style="display: none">clear All</label>
+        </div>
+        <label id="no-notifications" style="margin: auto;">No notifications</label>
+    </div>
+    <div id="system-resources" style="display: none">
+
+    </div>
+</body>
+</html>
+<script src="http://localhost:2000/main/script.js"></script>

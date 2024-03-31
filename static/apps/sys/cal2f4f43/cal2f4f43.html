@@ -1,0 +1,63 @@
+<div id="cal2f4f43" style="top: 20%;left: 20%;">
+    <div id="cal2f4f43-bar" class="cal2f4f43-flex-row" style="height: 30px;justify-content: space-between">
+        <label style="margin: auto 10px"><i class="fal fa-calendar-alt" style="margin-right: 5px"></i> Calendar</label>
+        <div class="flex-row cal2f4f43-flex-row">
+            <i class="fal fa-window-minimize cal2f4f43-cursor" id="cal2f4f43-minimize" style="margin: 2px 5px;padding: 2px 5px"></i>
+            <i class="fal fa-times cal2f4f43-cursor" id="cal2f4f43-close" style="margin: 2px 5px;padding: 2px 5px"></i>
+        </div>
+    </div>
+    <div id="cal2f4f43-main-page" class="cal2f4f43-flex-row">
+        <div id="cal2f4f43-side-bar" class="cal2f4f43-felx-column">
+            <i class="fal fa-bars cal2f4f43-cursor" id="cal2f4f43-side-bar-contract" style="margin: 10px"></i>
+            <label id="cal2f4f43-side-bar-month" class="cal2f4f43-cursor cal2f4f43-flex-row"><i class="fal fa-calendar-day" style="margin: 10px"></i><label style="margin: auto 0;z-index: -1">Month</label></label>
+            <label id="cal2f4f43-side-bar-year" class="cal2f4f43-cursor cal2f4f43-flex-row"><i class="fal fa-calendar" style="margin: 10px"></i><label style="margin: auto 0;z-index: -1">Year</label></label>
+            <label id="cal2f4f43-side-bar-starred" class="cal2f4f43-cursor cal2f4f43-flex-row"><i class="fal fa-calendar-star" style="margin: 10px"></i><label style="margin: auto 0;z-index: -1">Starred</label></label>
+            <label id="cal2f4f43-side-bar-event" class="cal2f4f43-cursor cal2f4f43-flex-row"><i class="fal fa-calendar-exclamation" style="margin: 10px"></i><label style="margin: auto 0;z-index: -1">Events</label></label>
+            <label id="cal2f4f43-side-bar-events" class="cal2f4f43-cursor cal2f4f43-flex-row"><i class="fal fa-calendar-plus" style="margin: 10px"></i><label style="margin: auto 0;z-index: -1">New Event</label></label>
+            <i id="cal2f4f43-side-bar-star" class="fal fa-star cal2f4f43-cursor" style="margin: 10px;display: none"></i>
+        </div>
+        <div id="cal2f4f43-display-page" class="flex-column">
+            <div id="cal2f4f43-side-bar-month-page" class="cal2f4f43-felx-column" style="display: flex">
+                <div class="cal2f4f43-flex-row" style="margin: 10px 0 10px 15px; font-size: large">
+                    <i class="fal fa-chevron-left cal2f4f43-cursor" id="cal2f4f43-side-bar-month-page-prev" style="margin:auto 10px"></i>
+                    <label style="color: #AA00FF;margin: auto 2px" id="cal2f4f43-side-bar-month-page-month"></label>
+                    <i class="fal fa-chevron-right cal2f4f43-cursor" id="cal2f4f43-side-bar-month-page-next" style="margin:auto 10px"></i>
+                    <label id="cal2f4f43-side-bar-month-page-year" style="margin:auto 10px;color: #2962FF;"></label>
+                    <label id="cal2f4f43-side-bar-month-page-now" class="cal2f4f43-cursor" style="margin: auto 10px;color: #2962FF">Now</label>
+                </div>
+                <div id="cal2f4f43-side-bar-month-page-months" style="margin: 5px;"></div>
+            </div>
+
+            <div id="cal2f4f43-side-bar-year-page" class="cal2f4f43-felx-column" style="display: none">
+                <div class="cal2f4f43-flex-row" style="justify-content: center">
+                    <i class="fal fa-chevron-left cal2f4f43-cursor" id="cal2f4f43-side-bar-year-page-prev" style="margin:auto 10px"></i>
+                    <label style="color: #AA00FF;margin: auto 2px" id="cal2f4f43-side-bar-year-page-year"></label>
+                    <i class="fal fa-chevron-right cal2f4f43-cursor" id="cal2f4f43-side-bar-year-page-next" style="margin:auto 10px"></i>
+                    <label id="cal2f4f43-side-bar-year-page-now" class="cal2f4f43-cursor" style="margin: auto 10px;color: #2962FF">Now</label>
+                </div>
+                <div class="cal2f4f43-flex-column" id="cal2f4f43-side-bar-year-page-years" style="overflow-y: scroll"></div>
+            </div>
+
+            <div id="cal2f4f43-side-bar-starred-page" class="cal2f4f43-felx-column" style="display: none;overflow-y: scroll;max-height: 90%"></div>
+
+            <div id="cal2f4f43-side-bar-event-page" class="cal2f4f43-felx-column" style="display: none;overflow-y: scroll;max-height: 90%"></div>
+
+            <div id="cal2f4f43-side-bar-events-page" class="cal2f4f43-felx-column" style="display: none">
+                <label style="margin: 5px auto 5px 5px;background-color: #2962FF;padding:5px 10px; border-radius: 50px;color:white;"><i class="fal fa-plus" style="margin: auto 5px;" ></i>Add a event</label>
+                <div class="cal2f4f43-flex-row" style="margin: 10px 5px">
+                    <label style="margin: auto 5px">Event name</label>
+                    <input type="text" id="cal2f4f43-side-bar-events-page-name" class="cal2f4f43-inputs">
+                </div>
+                <div class="cal2f4f43-flex-row" style="margin: 10px 5px">
+                    <label style="margin: auto 5px">Event place <i class="fal fa-location-arrow" style="margin-left: 5px"></i></label>
+                    <input type="text" id="cal2f4f43-side-bar-events-page-place" class="cal2f4f43-inputs">
+                </div>
+                <div class="cal2f4f43-flex-row" style="margin: 10px 5px">
+                    <label style="margin: auto 5px">Event date<i class="fal fa-calendar-day" style="margin-left: 10px"></i></label>
+                    <input type="date" id="cal2f4f43-side-bar-events-page-date" class="cal2f4f43-inputs">
+                </div>
+                <label id="cal2f4f43-side-bar-events-page-create" style="border-radius: 50px;border:0;background-color: #2962FF;padding: 5px 10px;margin: auto" class="cal2f4f43-cursor"><i class="fal fa-plus" style="margin: auto 5px"></i>create</label>
+            </div>
+        </div>
+    </div>
+</div>

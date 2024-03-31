@@ -1,0 +1,76 @@
+<div id="oermfo3f" style="top: 20%;left: 25%;">
+    <div id="oermfo3f-bar" class="oermfo3f-flex-row" style="width: 100%;height: 30px;justify-content: space-between">
+        <label style="margin: auto 5px;"><i class="fal fa-clock" style="margin-right: 10px"></i>Clock</label>
+        <div class="oermfo3f-flex-row">
+            <i class="fal fa-window-minimize" id="oermfo3f-minimize" style="margin: 2px 5px;padding: 2px 5px;"></i>
+            <i class="fal fa-times" id="oermfo3f-close" style="margin: 2px 5px;padding: 2px 5px;"></i>
+        </div>
+    </div>
+    <div id="oermfo3f-main-page" class="oermfo3f-flex-column">
+        <div id="oermfo3f-display-page">
+
+            <div id="oermfo3f-clock-page" class="oermfo3f-flex-column">
+                <div id="oermfo3f-clock-page-time" class="oermfo3f-flex-row">
+                    <label id="oermfo3f-clock-page-hrs">00</label>
+                    <span>:</span>
+                    <label id="oermfo3f-clock-page-min">00</label>
+                    <span>:</span>
+                    <label id="oermfo3f-clock-page-sec">00</label>
+                </div>
+                <div id="oermfo3f-clock-page-date" class="oermfo3f-flex-row">
+                    <label id="oermfo3f-clock-page-day">00</label>
+                    <label id="oermfo3f-clock-page-month">January</label>
+                    <label id="oermfo3f-clock-page-year">0000</label>
+                </div>
+            </div>
+
+            <div id="oermfo3f-stopwatch-page" style="display:none;" class="oermfo3f-flex-column">
+                <div class="oermfo3f-flex-row" id="oermfo3f-stopwatch-timer">
+                    <label id="oermfo3f-stopwatch-hrs">00</label>
+                    <span>:</span>
+                    <label id="oermfo3f-stopwatch-min">00</label>
+                    <span>:</span>
+                    <label id="oermfo3f-stopwatch-sec">00</label>
+                </div>
+                <div id="oermfo3f-stopwatch-lap" class="oermfo3f-flex-column">
+                    <div class="oermfo3f-flex-row" id="oermfo3f-stopwatch-controller">
+                        <i class="fal fa-play oermfo3f-cursor" id="oermfo3f-stopwatch-lap-play"></i>
+                        <i class="fal fa-history oermfo3f-cursor" id="oermfo3f-stopwatch-lap-reset"></i>
+                        <i  style="display: none" class="fal fa-flag-checkered oermfo3f-cursor" id="oermfo3f-stopwatch-lap-flag"></i>
+                    </div>
+                    <div id="oermfo3f-stopwatch-lap-header" class="oermfo3f-flex-row" >
+                        <label>Lap</label>
+                        <label>Lap Time</label>
+                        <label>Total Time</label>
+                    </div>
+                    <div id="oermfo3f-stopwatch-lap-data" class="oermfo3f-flex-column">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="oermfo3f-timer-page" class="oermfo3f-flex-column" style="display: none">
+                <div class="oermfo3f-flex-row" style="justify-content: space-evenly;" id="oermfo3f-timer-page-input">
+                    <input type="number" id="oermfo3f-timer-page-hrs" placeholder="hrs">:
+                    <input type="number" id="oermfo3f-timer-page-min" placeholder="min">:
+                    <input type="number" id="oermfo3f-timer-page-sec" placeholder="sec">
+                </div>
+                <div id="oermfo3f-timer-page-display-input" class="oermfo3f-flex-row" style="justify-content: space-evenly">
+                    <label id="oermfo3f-timer-page-display-hrs">00</label>:
+                    <label id="oermfo3f-timer-page-display-min">00</label>:
+                    <label id="oermfo3f-timer-page-display-sec">00</label>
+                </div>
+                <div class="oermfo3f-flex-row" id="oermfo3f-timer-page-controller" style="justify-content: space-evenly">
+                    <i class="fal fa-play oermfo3f-cursor" id="oermfo3f-timer-play"></i>
+                    <i class="fal fa-history oermfo3f-cursor" id="oermfo3f-timer-reset"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="oermfo3f-flex-row" style="justify-content: space-evenly" id="oermfo3f-nav">
+            <label id="oermfo3f-clock" class="oermfo3f-cursor"><i class="fal fa-clock" style="margin-right: 5px"></i>Clock</label>
+            <label id="oermfo3f-timer" class="oermfo3f-cursor"><i class="fal fa-alarm-clock" style="margin-right: 5px"></i>Timer</label>
+            <label id="oermfo3f-stopwatch" class="oermfo3f-cursor"><i class="fal fa-stopwatch" style="margin-right: 5px"></i>Stopwatch</label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,128 @@
+.oermfo3f-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.oermfo3f-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+#oermfo3f{
+    position: absolute;
+    width: 350px;
+    border: thin solid #eeeeed;
+    height: 450px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+}
+#oermfo3f-minimize:hover,#oermfo3f-close:hover{
+    cursor: pointer;
+}
+#oermfo3f-main-page{
+    position: absolute;
+    top: 30px;
+    height: 90%;
+    width: 100%;
+}
+#oermfo3f-display-page{
+    height: 90%;
+}
+#oermfo3f-nav{
+    height: 10%;
+}
+#oermfo3f-nav label{
+    margin: auto;
+    border-style: none;
+    border-width: 0 0 medium 0;
+    border-color: #4e68ee;
+    padding: 2px 0;
+}
+#oermfo3f-clock-page-time{
+    margin: 20% auto 5px auto;
+}
+#oermfo3f-clock-page-time label,#oermfo3f-clock-page-time span{
+    margin: auto 5px;
+    font-size: 50px;
+}
+#oermfo3f-clock-page-date{
+    margin: 0 auto;
+}
+#oermfo3f-clock-page-date label{
+    margin: auto 5px;
+}
+
+#oermfo3f-stopwatch-timer{
+    margin: 20px auto 5px auto;
+    font-size: 50px;
+}
+#oermfo3f-stopwatch-timer span,#oermfo3f-stopwatch-page label{
+    margin: auto 5px;
+}
+
+
+#oermfo3f-stopwatch-lap-header{
+    justify-content: space-evenly;
+    margin: 5px auto;
+    width: 90%;
+    border-style: solid;
+    border-width: 0 0 thin 0;
+    border-color: #4e68ee;
+    padding-bottom: 5px;
+}
+#oermfo3f-stopwatch-controller{
+    justify-content: space-evenly;
+    margin: 10px;
+}
+#oermfo3f-stopwatch-controller i{
+    border-radius: 50px;
+    padding: 5px 15px;
+    background-color: #4e68ee;
+    color: white;
+}
+.oermfo3f-cursor:hover{
+    cursor: pointer;
+}
+.oermfo3f-stopwatch-lap-data-obj{
+    justify-content: space-evenly;
+    margin: 5px auto;
+    width: 100%;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#oermfo3f-stopwatch-lap-data{
+    padding: 5px 0;
+    overflow-y: scroll;
+    max-height: 150px;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+::-webkit-inner-spin-button{
+    display: none;
+}
+#oermfo3f-timer-page{
+    margin: 20px auto;
+}
+#oermfo3f-timer-page-input >input{
+    width: 40px;
+    outline: none;
+    height: 30px;
+    border: thin solid #252524;
+    text-align: center;
+    border-radius: 50px;
+    padding-inline: 5px;
+}
+
+#oermfo3f-timer-page-display-input{
+    font-size:50px;
+}
+#oermfo3f-timer-page-controller{
+    margin: 50px 2px;
+}
+#oermfo3f-timer-page-controller i {
+    border-radius: 50px;
+    padding: 5px 15px;
+    background-color: #4e68ee;
+    color: white;
+}

@@ -1,0 +1,376 @@
+#root{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.center{
+    text-align: center;
+}
+.scale15{
+    transform: scale(1.5);
+}
+.text-margin{
+    margin: 5px auto;
+}
+.obj-margin{
+    margin: 10px 15px auto 15px;
+}
+#app-runner{
+    height:100%;
+    width: 100%;
+}
+
+#taskbar{
+    z-index: 100;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#app-pinned{
+    justify-content: center;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    min-width: 200px;
+}
+.app-pinned-obj{
+    border-radius: 50px;
+    margin: auto 10px;
+    padding: 5px;
+}
+.app-pinned-obj:hover{
+    cursor: pointer;
+}
+#app-drawer{
+    min-width: 300px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    justify-content: center;
+}
+.app-drawer-obj{
+    border-radius: 50px;
+    margin: auto 10px;
+    padding: 5px;
+}
+.app-drawer-obj:hover{
+    cursor: pointer;
+}
+#date-time{
+    justify-content: center;
+    border-radius: 50px;
+    padding: 5px;
+    min-width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#date,#time{
+    margin: auto 10px;
+}
+#user-profile-window{
+    position: absolute;
+    bottom: 80px;
+    right: -15%;
+    min-height: 230px;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    z-index: 3;
+    border: thin solid #eeeeed;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+#signup-window, #login-window{
+    display: flex;
+    flex-direction: column;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+#signup-window input ,#login-window input {
+    border-radius: 50px;
+    padding-inline: 10px;
+    margin: 10px;
+    height: 25px;
+    outline: none;
+    border: thin solid #eeeeed;
+}
+#signup-btn,#login-btn,#logout,#user-settings-save{
+    border-radius: 50px;
+    margin: 10px auto;
+    padding: 5px 15px;
+    background-color: rgba(66, 165, 245,1);
+    color: rgba(232, 234, 246,1);
+}
+#signup-window-btn:hover,#login-window-btn:hover,#user-settings-save:hover{
+    cursor: pointer;
+}
+#signup-btn:hover,#login-btn:hover,#logout:hover{
+    cursor: pointer;
+}
+#user-profile:hover{
+    cursor: pointer;
+}
+#user-info-window{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+
+#user-info-window label{
+    margin: 20px auto;
+}
+@keyframes show-user-profile {
+    from{right: -15%;}
+    to{right: 5%;}
+}
+@keyframes hide-user-profile {
+    from{right: 5%;}
+    to{right: -15%;}
+}
+@keyframes fade {
+    from {opacity: 1}
+    to {opacity: 0;}
+}
+@keyframes defade {
+    from {opacity: 0;}
+    to{ opacity: 1}
+}
+@keyframes show-app-runner {
+    from{left: -17%;}
+    to {left: 1%}
+}
+@keyframes hide-app-runner {
+    from {left: 1%;}
+    to{left: -17%;}
+}
+
+@keyframes show-app-view {
+    from{
+        max-height: 0;
+        opacity: 0;
+    }
+    to{
+        max-height: 400px;
+        opacity: 1;
+    }
+}
+@keyframes hide-app-view {
+    from{max-height: 400px;}
+    to{
+        max-height: 0;
+        opacity: 0;
+    }
+}
+@keyframes dock-taskbar {
+    from {bottom: -55px;}
+    to{bottom: 0;}
+}
+@keyframes undock-taskbar {
+    from{bottom: 0;}
+    to{bottom: -55px;}
+}
+@keyframes display-notification {
+    from{right: -25%;}
+    to{right: 0;}
+}
+@keyframes hide-notification {
+    from{right: 0;}
+    to{right: -25%}
+}
+@keyframes clear-notification {
+    from{opacity: 1}
+    to{opacity: 0}
+}
+@keyframes show-permission {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@keyframes hide-permission {
+    from{opacity: 1}
+    to{opacity: 0}
+}
+#app-view{
+    margin: 15% auto 0 auto;
+    width: 600px;
+    display: none;
+    border-radius: 5px;
+    position: relative;
+    max-height: 0;
+    height: 400px;
+    flex-direction: column;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+    border: thin solid #eeeeed;
+
+}
+#app-view i:hover{
+    cursor: pointer;
+}
+#search-input{
+    border-radius: 5px;
+    border: 0;
+    height: 30px;
+    outline: none;
+    padding-inline: 10px;
+    text-align: center;
+    font-size: large;
+}
+.app-view-obj:hover{
+    cursor: pointer;
+}
+#app-view-right{
+    display: flex;
+    flex-wrap: wrap;
+}
+#run-app-window{
+    position: absolute;
+    bottom: 10%;
+    left: -17%;
+    border: thin solid #eeeeed;
+    height: 100px;
+    display: none;
+    width: 230px;
+    background-color: #f44336;
+    border-radius: 5px;
+    z-index: 100;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+#run-app-input{
+    margin: auto 0;
+    height: 30px;
+    border:0;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+    padding-inline: 10px;
+}
+#close-run-app{
+    padding: 2px 5px;
+}
+#close-run-app:hover{
+    cursor: pointer;
+    background: rgba(255, 243, 224,1);
+}
+#run:hover{
+    cursor: pointer;
+}
+#notification-window{
+    position: absolute;
+    top: 5%;
+    right: -25%;
+    border:thin solid #eeeeed;
+    border-radius: 5px 0 0 5px;
+    height: 85%;
+    overflow-y: scroll;
+    padding: 5px;
+    z-index: 100;
+    width: 350px;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+#notification-btn:hover{
+    cursor: pointer;
+}
+.notification-window-obj{
+    margin: 10px auto;
+    border:thin solid #eeeeed;
+    border-radius: 5px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    background-color: transparent;
+}
+.clear,#clear-all{
+    border-radius: 50px;
+    background-color: rgba(66, 165, 245,1);
+    color: rgba(232, 234, 246,1);
+    padding: 5px 10px;
+    margin: 10px auto;
+}
+#clear-all {
+    border-radius: 50px;
+    background-color: rgba(66, 165, 245, 1);
+    color: rgba(232, 234, 246, 1);
+    padding: 5px 10px;
+    margin: 10px;
+}
+#clear-all:hover{
+    cursor: pointer;
+}
+.clear:hover{
+    cursor: pointer;
+}
+#time:hover,#date:hover{
+    cursor: pointer;
+}
+.permission-window{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    height: 150px;
+    width: 450px;
+    border: thin solid #eeeeed;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    z-index: 100;
+}
+.allow,.deny{
+    border-radius: 50px;
+    background-color: rgba(66, 165, 245, 1);
+    color: rgba(232, 234, 246, 1);
+    padding: 5px 10px;
+    margin: 10px;
+}
+.permission-msg{
+    margin: 20px 10px;
+    text-align: center;
+    word-break: normal;
+}
+.allow:hover,.deny:hover{
+    cursor: pointer;
+}

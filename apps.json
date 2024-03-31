@@ -1,0 +1,157 @@
+{
+  "njk39c3ce": {
+    "code": "http://localhost:2000/apps/custom/njk39c3ce/njk39c3ce.html",
+    "iconTpe": "fa",
+    "iconSrc": "fal fa-calculator-alt",
+    "appname": "calculator",
+    "sys": 1,
+    "appId": "njk39c3ce",
+    "exec": [],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0
+    }
+  },
+  "l43nkd4d": {
+    "code": "http://localhost:2000/apps/custom/l43nkd4d/l43nkd4d.html",
+    "iconTpe": "fa",
+    "iconSrc": "fal fa-images",
+    "appname": "Gallery",
+    "sys": 0,
+    "appId": "l43nkd4d",
+    "exec": [],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0
+    }
+  },
+  "xo23qwrr": {
+    "code": "http://localhost:2000/apps/custom/xo23qwrr/xo23qwrr.html",
+    "iconTpe": "fa",
+    "iconSrc": "fal fa-image",
+    "appname": "Image viewer",
+    "sys": 1,
+    "appId": "xo23qwrr",
+    "exec": ["png","jpg","jpeg"],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0
+    }
+  },
+  "oermfo3f":{
+    "code": "http://localhost:2000/apps/sys/oermfo3f/oermfo3f.html",
+    "iconTpe": "fa",
+    "iconSrc": "fal fa-clock",
+    "appname": "Clock",
+    "sys": 1,
+    "appId": "oermfo3f",
+    "exec": [],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0
+    }
+  },
+  "njk2d4kd":{
+    "code":"http://localhost:2000/apps/sys/njk2d4kd/njk2d4kd.html",
+    "iconTpe":"fa",
+    "iconSrc":"fal fa-cog",
+    "appname":"Settings",
+    "sys":1,
+    "appId":"njk2d4kd",
+    "exec":[],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0
+    }
+  },
+  "df3mk3lm":{
+    "code":"http://localhost:2000/apps/sys/df3mk3lm/df3mk3lm.html",
+    "iconTpe": "fa",
+    "iconSrc": "fal fa-tasks-alt",
+    "appname":"Task manager",
+    "sys":1,
+    "appId":"df3mk3lm",
+    "exec":[],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0
+    }
+  },
+  "dfo3imf3":{
+    "code":"http://localhost:2000/apps/sys/dfo3imf3/dfo3imf3.html",
+    "iconTpe":"fa",
+    "iconSrc": "fab fa-app-store",
+    "appname":"App store",
+    "sys":1,
+    "appId":"dfo3imf3",
+    "exec":[],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0,
+      "install": 0
+    }
+  },
+  "cal2f4f43":{
+    "code":"http://localhost:2000/apps/sys/cal2f4f43/cal2f4f43.html",
+    "iconTpe":"fa",
+    "iconSrc": "fab fa-calendar-alt",
+    "appname":"Calendar",
+    "sys":1,
+    "appId":"cal2f4f43",
+    "exec":[],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0
+    }
+  },
+  "clo34m24r": {
+    "code":"http://localhost:2000/apps/custom/clo34m24r/clo34m24r.html",
+    "iconTpe":"fa",
+    "iconSrc": "fal fa-cloud",
+    "appname":"rainyCloud",
+    "sys":0,
+    "appId":"clo34m24r",
+    "exec":[],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0
+    }
+  },
+  "fi23ex45": {
+    "code": "http://localhost:2000/apps/custom/fi23ex45/fi23ex45.html",
+    "iconTpe": "fa",
+    "iconSrc": "fal fa-folder",
+    "appname": "File Explorer",
+    "sys": 1,
+    "appId": "fil23ex45",
+    "exec": [],
+    "permission": {
+      "read": 0,
+      "write": 0,
+      "modify": 0
+    }
+  },
+  "ter243min": {
+    "code": "http://localhost:2000/apps/sys/ter243min/ter243min.html",
+    "iconTpe": "fa",
+    "iconSrc": "fal fa-folder",
+    "appname": "Terminal",
+    "sys": 1,
+    "appId": "ter243min",
+    "exec": [],
+    "permission": {
+      "read": 1,
+      "write": 1,
+      "modify":1
+    }
+  }
+}

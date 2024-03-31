@@ -1,0 +1,8 @@
+{
+  "nano": {
+    "pkgname": "nano",
+    "version":"1.0.0",
+    "location": "./static/apps/custom/ter243min/nano.js",
+    "developer": "minion2.0"
+  }
+}

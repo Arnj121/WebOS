@@ -1,0 +1,211 @@
+<div id="njk2d4kd">
+    <div class="njk2d4kd-flex-row" id="njk2d4kd-bar">
+        <label style="margin: auto 5px;"><i class="fal fa-cog" style="margin-right: 10px"></i>Settings</label>
+        <div class="njk2d4kd-flex-row">
+             <i class="fal fa-window-minimize njk2d4kd-obj-padding" id="njk2d4kd-minimize" style="margin: auto 0"></i>
+             <i class="fal fa-times njk2d4kd-obj-padding" id="njk2d4kd-close" style="margin: auto 0"></i>
+        </div>
+    </div>
+    <div class="njk2d4kd-flex-column" id="njk2d4kd-main-page">
+        <div class="njk2d4kd-flex-row" style="height: 20%;width: 100%;justify-content: center">
+            <input type="text" id="njk2d4kd-search-input" placeholder="Search">
+        </div>
+        <div class="njk2d4kd-flex-row" style="height: 80%; width: 100%;background-color: transparent" >
+            <div id="njk2d4kd-side-menu" class="njk2d4kd-flex-column">
+                <label id="njk2d4kd-theme" class="njk2d4kd-side-menu-obj"><i class="fal fa-palette" style="margin-right: 10px;transform: scale(1.5)"></i> Theme</label>
+                <label id="njk2d4kd-taskbar" class="njk2d4kd-side-menu-obj"><i class="fal fa-tasks-alt" style="margin-right: 10px;transform: scale(1.5)"></i> Taskbar</label>
+                <label id="njk2d4kd-apps" class="njk2d4kd-side-menu-obj"><i class="fab fa-app-store" style="margin-right: 10px;transform: scale(1.5)"></i> Apps</label>
+                <label id="njk2d4kd-date-time" class="njk2d4kd-side-menu-obj"><i class="fal fa-calendar-day" style="margin-right: 10px;transform: scale(1.5)"></i> Date & Time</label>
+                <label id="njk2d4kd-control-panel" class="njk2d4kd-side-menu-obj"><i class="fal fa-gamepad" style="margin-right: 10px;transform: scale(1.5)"></i> Control panel</label>
+                <label id="njk2d4kd-background" class="njk2d4kd-side-menu-obj"><i class="fal fa-image" style="margin-right: 10px;transform: scale(1.5)"></i> Background</label>
+                <label id="njk2d4kd-app-drawer" class="njk2d4kd-side-menu-obj"><i class="fab fa-app-store-ios" style="margin-right: 10px;transform: scale(1.5)"></i> App drawer</label>
+                <label id="njk2d4kd-search" class="njk2d4kd-side-menu-obj"><i class="fal fa-search" style="margin-right: 10px;transform: scale(1.5)"></i>Search</label>
+            </div>
+            <div id="njk2d4kd-detail-menu" class="njk2d4kd-flex-column">
+                <div id="njk2d4kd-theme-window" class="njk2d4kd-flex-column" style="">
+                    <label style="margin: 10px 25px;font-size: xx-large">Theme</label>
+                    <label style="margin: 10px 30px;font-size: large">Dark Mode</label>
+                    <i class="fal fa-toggle-off" id="njk2d4kd-dark-theme-btn"></i>
+                </div>
+
+                <div id="njk2d4kd-taskbar-window" class="njk2d4kd-flex-column">
+                    <label style="margin: 10px 25px;font-size: xx-large">Taskbar</label>
+                    <label style="font-size: large;margin: 10px 30px">Taskbar color</label>
+                    <div class="njk2d4kd-flex-row" style="margin:10px 30px">
+                        <label class="njk2d4kd-taskbar-color" id="njk2d4kd-taskbar-theme">Theme Color</label>
+                        <label class="njk2d4kd-taskbar-color" id="njk2d4kd-taskbar-custom">Custom Color</label>
+                    </div>
+                    <div class="njk2d4kd-flex-column" style="margin:10px 30px;display: none" id="njk2d4kd-taskbar-custom-color">
+                        <label style="font-size: large;margin-bottom:5px">Select a color</label>
+                        <label style="font-size: large;margin:5px 0">Background Color</label>
+                        <input type="color" id="njk2d4kd-color-background" value="#f08282">
+                        <label style="font-size: large;margin:5px 0">Foreground Color</label>
+                        <input type="color" id="njk2d4kd-color-foreground" value="#f08282">
+                        <label style="font-size: large;margin:5px 0 ">Font Color</label>
+                        <input type="color" id="njk2d4kd-color-font" value="#f08282">
+                        <label id="njk2d4kd-taskbar-custom-color-apply">Apply</label>
+                    </div>
+                    <div class="njk2d4kd-flex-row" style="margin: 10px 35px">
+                        <i class="fal fa-toggle-off" style="margin-right: 15px;transform: scale(1.5)" id="njk2d4kd-taskbar-transparency"></i>
+                        <label style="font-size: large;">Use taskbar transparency effect</label>
+                    </div>
+                    <div class="njk2d4kd-flex-row" style="margin: 10px 35px;">
+                        <i class="fal fa-toggle-off" style="margin-right: 15px;transform: scale(1.5)" id="njk2d4kd-taskbar-time"></i>
+                        <label>Display only time</label>
+                    </div>
+                    <div class="njk2d4kd-flex-row" style="margin: 10px 35px;">
+                        <i class="fal fa-toggle-off" style="margin-right: 15px;transform: scale(1.5)" id="njk2d4kd-taskbar-dock"></i>
+                        <label>Dock the taskbar</label>
+                    </div>
+                </div>
+
+                <div id="njk2d4kd-apps-window" class="njk2d4kd-flex-row">
+                    <div id="njk2d4kd-apps-window-app-list" class="njk2d4kd-flex-column">
+                        <label style="margin: 5px">Apps</label>
+                        <div id="njk2d4kd-apps-window-app-list-sub" class="njk2d4kd-flex-column">
+
+                        </div>
+                    </div>
+                    <div id="njk2d4kd-apps-window-app-info" class="njk2d4kd-flex-column">
+                        <label style="margin: 5px">App info</label>
+                        <div id="njk2d4kd-apps-window-app-info-sub" class="njk2d4kd-flex-column">
+                            <label style="margin: 10px auto">Not Selected</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="njk2d4kd-date-time-window" class="njk2d4kd-flex-column">
+                    <label style="margin: 10px 25px;font-size: xx-large">Date & Time</label>
+                    <div class="njk2d4kd-flex-row" style="margin: 30px 30px 10px 30px">
+                        <i class="fal fa-toggle-on" style="margin-right: 15px;transform: scale(1.5)" id="njk2d4kd-date-time-automatic"></i>
+                        <label style="font-size: large">Set automatic date and time</label>
+                    </div>
+                    <div class="njk2d4kd-flex-column" style="margin: 10px 30px;display: none" id="njk2d4kd-manual-date-time">
+                        <label style="font-size: large">Select date and time</label>
+                        <input type="datetime-local" id="njk2d4kd-date-time-input" value="">
+                        <label id="njk2d4kd-date-time-input-apply">Apply</label>
+                    </div>
+                </div>
+
+                <div id="njk2d4kd-control-panel-window" class="njk2d4kd-flex-column">
+                    <div id="njk2d4kd-control-pannel-nav" class="njk2d4kd-flex-row">
+                        <label id="njk2d4kd-control-pannel-nav-accounts" class="cursor" style="margin: auto 10px;border-style: solid;
+                            border-color: #2962FF;border-width: 0">Accounts</label>
+                        <label id="njk2d4kd-control-pannel-nav-data" class="cursor" style="margin: auto 10px;border-style: solid;
+                            border-color: #2962FF;border-width: 0">Data</label>
+                    </div>
+                    <div style="display:flex;" id="njk2d4kd-control-pannel-accounts" class="njk2d4kd-flex-column">
+                        <div id="njk2d4kd-control-pannel-accounts-signin-display" class="njk2d4kd-flex-row" style="margin:10px 5px;display: none">
+                            <input  type="email" placeholder="Email" class="njk2d4kd-control-pannel-inputs" id="njk2d4kd-control-pannels-accounts-signin-email">
+                            <input type="password" placeholder="Password" class="njk2d4kd-control-pannel-inputs" id="njk2d4kd-control-pannels-accounts-signin-password">
+                            <label class="njk2d4kd-apps-reset" id="njk2d4kd-control-pannel-accounts-signin">Sign in<i class="fal fa-arrow-right" style="margin-left: 5px"></i></label>
+                        </div>
+                        <div id="njk2d4kd-control-pannel-logged-display" class="njk2d4kd-flex-column" style="display: none;margin:10px 5px">
+                            <label style="margin: 5px;font-size: xx-large">
+                                Logged in as
+                                <label style="margin: 5px 5px 5px 10px;font-size:large;" id="njk2d4kd-control-pannel-accounts-logged"></label></label>
+                            <label class="njk2d4kd-apps-reset" id="njk2d4kd-control-pannel-signout" style="font-size:small;margin:5px auto 5px 5px"><i style="margin-right: 5px" class="fal fa-sign-out-alt"></i> Sign Out</label>
+                        </div>
+                        <label style="margin: 10px 5px 10px 5px">Accounts added</label>
+                        <div class="njk2d4kd-flex-column" style="margin: 5px 0">
+                            <label style="margin: 10px auto 10px 5px;font-size: small" id="njk2d4kd-control-pannel-add-account"><i class="fal fa-plus" style="margin-right: 5px"></i> Add Account</label>
+                            <div style="display: none" class="njk2d4kd-flex-row" id="njk2d4kd-control-pannel-add-display">
+                                <input type="text" placeholder="Username" id="njk2d4kd-control-pannel-username" class="njk2d4kd-control-pannel-inputs">
+                                <input type="email" placeholder="Email Id" id="njk2d4kd-control-pannel-email" class="njk2d4kd-control-pannel-inputs">
+                                <input type="password" placeholder="Password" id="njk2d4kd-control-pannel-password" class="njk2d4kd-control-pannel-inputs">
+                                <label id="njk2d4kd-control-pannel-add"><i class="fal fa-plus" style="margin-right: 5px"></i> Add</label>
+                            </div>
+                        </div>
+                        <label style="margin: 5px 5px 10px 10px" id="njk2d4kd-control-pannel-none-added">None</label>
+                        <div class="njk2d4kd-flex-column" id="njk2d4kd-control-pannel-accounts-list">
+
+                        </div>
+                    </div>
+                    <div id="njk2d4kd-control-pannel-data" style="display: none" class="njk2d4kd-flex-column">
+                        <div class="njk2d4kd-flex-row" id="njk2d4kd-control-pannel-data-warning" style="margin: 5px">
+                            <label style="margin: 5px;font-size: large">Sign in to save data</label>
+                            <label style="margin: auto 5px;font-size: small" class="njk2d4kd-apps-reset" id="njk2d4kd-control-pannel-data-signin">Sign In</label>
+                        </div>
+                        <div id="njk2d4kd-control-pannel-data-details" class="njk2d4kd-flex-column">
+                            <label style="margin: 10px 5px">
+                                <label style="font-size: large;margin: 5px">Last Saved</label>
+                                <label style="margin: 5px" id="njk2d4kd-control-pannel-data-last-saved"></label></label>
+                            <div class="njk2d4kd-flex-column" id="njk2d4kd-control-pannel-data-info">
+                                <div class="njk2d4kd-flex-row" style="margin: 10px 5px">
+                                    <i class="fal fa-toggle-on cursor" style="margin: auto 5px;transform: scale(1.5)" id="njk2d4kd-control-pannel-data-interval-toggle"></i>
+                                    <label style="margin: auto 5px">Save Data Periodically</label>
+                                </div>
+                                <div class="njk2d4kd-flex-row" id="njk2d4kd-control-pannel-data-interval-display" style="margin: 10px 5px">
+                                    <label style="margin: auto 5px">Save every</label>
+                                    <select id="njk2d4kd-control-pannel-data-interval"
+                                            style="margin: auto 5px;border: thin solid #d1d1d0;border-radius: 5px;outline: none;height: 30px">
+                                        <option value="5">5 Min</option>
+                                        <option value="10">10 Min</option>
+                                        <option value="15">15 Min</option>
+                                        <option value="30">30 Min</option>
+                                    </select>
+                                </div>
+                                <label class="njk2d4kd-apps-reset" style="margin: 5px auto 5px 10px;font-size: small" id="njk2d4kd-control-pannel-data-save-now">Save now</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="njk2d4kd-background-window" class="njk2d4kd-flex-column" >
+                    <label style="margin: 10px 25px;font-size: xx-large">Background</label>
+                    <img src="#" id="njk2d4kd-background-image" style="background: #f08282;">
+                    <label style="margin: 10px auto 10px 30px">
+                        <input type="checkbox" checked  id="njk2d4kd-background-default-image"
+                               style="margin: 0 5px;" value="yes">Use default background</label>
+                    <label id="njk2d4kd-no-image-remove" style="margin: 10px auto 10px 30px;display: none" >Remove Image</label>
+                    <input type="file" accept="image/*" id="njk2d4kd-image-input" hidden/>
+                    <label style="margin: 10px auto 10px 30px" id="njk2d4kd-image-input-btn">Select image</label>
+                    <label style="margin: 10px 30px;">Select background color</label>
+                    <input type="color" id="njk2d4kd-background-color-input" value="#f08282">
+                    <label id="njk2d4kd-background-apply" style="margin: 10px auto 10px 30px">Apply</label>
+                </div>
+
+                <div id="njk2d4kd-app-drawer-window" class="njk2d4kd-flex-column">
+                    <label style="margin: 10px 25px;font-size: xx-large">App Drawer</label>
+                    <label style="margin: 20px 30px 10px 30px;font-size: large">Taskbar layout</label>
+                    <div class="njk2d4kd-flex-row" id="njk2d4kd-dummy-taskbar">
+                        <i class="fal fa-plus-circle" id="njk2d4kd-dummy-taskbar-left-add"></i>
+                        <div id="njk2d4kd-dummy-taskbar-left">
+                        </div>
+                        <i class="fal fa-home"></i>
+                        <div id="njk2d4kd-dummy-taskbar-right">
+                        </div>
+                        <i class="fal fa-plus-circle" id="njk2d4kd-dummy-taskbar-right-add"></i>
+                    </div>
+                    <label id="njk2d4kd-dummy-taskbar-remove" style="margin: 10px auto 10px 30px;display: none" >Remove</label>
+                    <div id="njk2d4kd-app-drawer-apps-display" class="njk2d4kd-flex-column" style="display: none">
+                        <label style="font-size: large;margin: 5px">Select an App</label>
+                        <div class="njk2d4kd-flex-column" id="njk2d4kd-app-drawer-apps-list">
+
+                        </div>
+                        <div class="njk2d4kd-flex-row" style="margin: 10px auto 10px 10px">
+                            <label id="njk2d4kd-app-drawer-apps-apply" style="margin: 5px;">Add</label>
+                            <label id="njk2d4kd-app-drawer-apps-cancel" style="margin: 5px;">Cancel</label>
+                        </div>
+                    </div>
+
+                    <div class="njk2d4kd-flex-row" style="margin: 30px 30px 10px 30px">
+                        <i class="fal fa-toggle-off" style="margin-right: 15px;transform: scale(1.5)" id="njk2d4kd-app-drawer-home"></i>
+                        <label>Show Only Home icon</label>
+                    </div>
+                    <div class="njk2d4kd-flex-row" style="margin: 10px 30px">
+                        <i class="fal fa-toggle-off" style="margin-right: 15px;transform: scale(1.5)" id="njk2d4kd-app-drawer-search"></i>
+                        <label style="font-size: large">Add search icon</label>
+                    </div>
+                </div>
+
+                <div id="njk2d4kd-search-window" class="njk2d4kd-flex-column" >
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="http://localhost:2000/apps/sys/njk2d4kd/njk2d4kd.css">
+<script src="http://localhost:2000/apps/sys/njk2d4kd/njk2d4kd.js"></script>
+<link rel="stylesheet" href="http://localhost:2045/public/fontawesome.css">

@@ -1,0 +1,228 @@
+#njk2d4kd{
+    height: 100%;
+    width: 100%;
+    border: thin solid #252524;
+    position: absolute;
+}
+.njk2d4kd-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.njk2d4kd-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.njk2d4kd-scale15{
+    transform: scale(1.5);
+}
+.njk2d4kd-obj-padding{
+    padding: 2px 10px;
+}
+#njk2d4kd-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+}
+#njk2d4kd-main-page{
+    height: 95%;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: transparent;
+}
+#njk2d4kd-main-page>div>div{
+    margin-bottom: 50px;
+}
+#njk2d4kd-minimize:hover, #njk2d4kd-close:hover{
+    cursor: pointer;
+    background: rgba(255, 243, 224,1);
+}
+#njk2d4kd-search-input{
+    border: 0;
+    margin: auto 0;
+    background-color: #c0c0bf;
+    padding-inline: 10px;
+    text-align: center;
+    height: 40px;
+    font-size: large;
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+}
+#njk2d4kd-side-menu{
+    width: 15%;
+    min-height: 100px;
+    margin: 10px auto;
+    padding: 10px 5px;
+    background-color: transparent;
+    min-width: 200px;
+}
+#njk2d4kd-side-menu div{
+    background-color: transparent;
+}
+.njk2d4kd-side-menu-obj{
+    padding: 10px 20px;
+    border-radius: 0 50px 50px 0;
+    font-size: large;
+}
+.njk2d4kd-side-menu-obj:hover{
+    cursor: pointer;
+}
+#njk2d4kd-detail-menu{
+    width: 80%;
+    margin: 10px auto;
+}
+#njk2d4kd-detail-menu>div{
+    display: none;
+    overflow-y: scroll;
+}
+#njk2d4kd-dark-theme-btn{
+    transform: scale(1.5);
+    margin: 10px auto 10px 35px;
+
+}
+#njk2d4kd-dark-theme-btn:hover{
+    cursor: pointer;
+}
+.njk2d4kd-taskbar-color{
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+.njk2d4kd-taskbar-color:hover{
+    cursor: pointer;
+}
+#njk2d4kd-taskbar-custom-color-apply,#njk2d4kd-date-time-input-apply,#njk2d4kd-background-apply,#njk2d4kd-app-drawer-apps-apply,
+#njk2d4kd-app-drawer-apps-cancel,#njk2d4kd-dummy-taskbar-remove,#njk2d4kd-image-input-btn,#njk2d4kd-no-image-remove,
+.njk2d4kd-apps-reset,.njk2d4kd-apps-uninstall,#njk2d4kd-control-pannel-add-account,#njk2d4kd-control-pannel-add{
+    border-radius: 50px;
+    margin: 10px auto 10px 0;
+    padding: 5px 10px;
+    background-color: rgba(66, 165, 245,1);
+    color: rgba(232, 234, 246,1);
+}
+#njk2d4kd-taskbar-custom-color-apply:hover,#njk2d4kd-date-time-input-apply:hover,#njk2d4kd-background-apply:hover,
+#njk2d4kd-app-drawer-apps-cancel:hover,#njk2d4kd-app-drawer-apps-apply:hover,#njk2d4kd-dummy-taskbar-remove:hover,
+#njk2d4kd-image-input-btn:hover,#njk2d4kd-no-image-remove:hover,.njk2d4kd-apps-reset:hover,
+#njk2d4kd-control-pannel-add-account:hover,#njk2d4kd-control-pannel-add:hover{
+    cursor: pointer;
+}
+#njk2d4kd-color-background,#njk2d4kd-color-foreground,#njk2d4kd-color-font{
+    border: 0;
+    padding: 0;
+    outline: none;
+    height: 30px;
+    width: 100px;
+}
+.njk2d4kd-control-pannel-inputs{
+    border: thin solid #d1d1d0;
+    border-radius: 5px;
+    padding-inline: 5px;
+    height: 30px;
+    width: 160px;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    margin: auto 10px;
+}
+#njk2d4kd-color:hover{
+    cursor: pointer;
+}
+#njk2d4kd-date-time-input{
+    border:none;
+    margin: 10px auto 10px 0;
+    height: 30px;
+    outline: none;
+    background-color: rgba(255, 205, 210,0.6);
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    padding-inline: 10px;
+}
+#njk2d4kd-date-time-input:hover{
+    cursor: pointer;
+}
+
+#njk2d4kd-background-image{
+    width: 320px;
+    height: 240px;
+    margin: 10px 30px;
+}
+#njk2d4kd-background-color-input{
+    margin: 10px auto 10px 30px;
+    padding: 0;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+#njk2d4kd-background-color-input:hover{
+    cursor: pointer;
+}
+#njk2d4kd-dummy-taskbar{
+    border-radius: 50px;
+    padding: 5px;
+    border:thin solid rgba(234, 128, 252,1);
+    margin: 20px auto 20px 50px;
+    color: rgba(149, 117, 205,1);
+}
+#njk2d4kd-dummy-taskbar i{
+    margin: 10px;
+    transform: scale(1.5);
+}
+#njk2d4kd-app-drawer-apps-display{
+    height: 300px;
+    width: 250px;
+    margin: 5px 20px;
+}
+#njk2d4kd-app-drawer-apps-list{
+    background-color: rgba(55, 71, 79,1);
+    height: 100%;
+    width: 100%;
+    margin: 0 10px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    color: #d1d1d0;
+}
+.njk2d4kd-app-drawer-apps-list-obj{
+    padding: 5px 10px;
+    margin: 5px;
+}
+.njk2d4kd-app-drawer-apps-list-obj:hover{
+    cursor: pointer;
+}
+
+#njk2d4kd-dummy-taskbar-left{
+    flex-direction: row-reverse;
+}
+#njk2d4kd-dummy-taskbar-right{
+    display: flex;
+    flex-direction: row;
+}
+#njk2d4kd-apps-window-app-list,#njk2d4kd-apps-window-app-info{
+    width: 50%;
+    max-height: 90%;
+    overflow-y: scroll;
+    padding: 5px 0;
+}
+#njk2d4kd-apps-window-app-info-sub,#njk2d4kd-apps-window-app-list-sub{
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+#njk2d4kd-dummy-taskbar-left-add:hover,#njk2d4kd-dummy-taskbar-right-add:hover{
+    cursor: pointer;
+}
+.cursor:hover{
+    cursor: pointer;
+}
+#njk2d4kd-app-drawer-home:hover{
+    cursor: pointer;
+}
+
+#njk2d4kd-app-drawer-search:hover{
+    cursor: pointer;
+}
+

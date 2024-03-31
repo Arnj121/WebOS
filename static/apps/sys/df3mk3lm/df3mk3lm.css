@@ -1,0 +1,72 @@
+#df3mk3lm{
+    position: absolute;
+    border: thin solid #eeeeed;
+    width: 700px;
+    height: 500px;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+#df3mk3lm-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+}
+#df3mk3lm-main-page{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+}
+.df3mk3lm-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.df3mk3lm-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+#df3mk3lm-bar div i:hover{
+    cursor: pointer;
+}
+#df3mk3lm-apps-running-left::-webkit-scrollbar{
+    width: 10px;
+}
+.df3mk3lm-app-running-left-obj{
+    padding: 5px 10px;
+    margin: 5px 0;
+
+}
+.df3mk3lm-app-running-left-obj:hover{
+    cursor: pointer;
+}
+.df3mk3lm-app-running-right-obj{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    display: none;
+}
+.df3mk3lm-button{
+    background-color: rgba(66, 165, 245,1);
+    color: rgba(232, 234, 246,1);
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 10px auto 10px 10px;
+    width: 100px;
+    text-align: center;
+}
+.df3mk3lm-button:hover{
+    cursor: pointer;
+}
+@keyframes fade {
+    from{opacity:1}
+    to{opacity: 0}
+}
+@keyframes defade {
+    from{opacity:0}
+    to{opacity: 1}
+}
