@@ -1,8 +1,8 @@
 const mongoClient = require('mongodb').MongoClient;
 require('dotenv').config()
 const ObjectID = require('mongodb').ObjectID;
-const dbname=process.env.DATABASE
-const url =process.env.RAILWAYURL
+const dbname=process.env.DATABASE || 'webos'
+const url =process.env.RAILWAYURL || 'mongodb://0.0.0.0:27017'
 let state ={
     db: null
 }

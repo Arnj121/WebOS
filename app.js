@@ -22,6 +22,6 @@ app.post('/initapp',processor.initapp)
 app.post('/saveapp',processor.saveapp)
 app.get('/loadapps',processor.loadapps)
 app.post('/saveapps',processor.saveapps)
-app.listen(process.env.PORT,'0.0.0.0',()=>{
-    console.log('we are live on 2000')
+app.listen(process.env.PORT || 2000,()=>{
+    console.log('we are live on '+process.env.PORT || 2000)
 })

@@ -661,7 +661,7 @@ class System{
         background: {
             backgroundimage: 1,
             backgroundcolor: '#f08282',
-            backgroundurl: 'http://3.15.4.94:2000/main/default.png',
+            backgroundurl: 'http://localhost:2000/main/default.png',
         },
         appdrawer: {
             onlyhome: 0,
