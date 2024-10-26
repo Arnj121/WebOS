@@ -1,6 +1,9 @@
 const express= require('express')
 const path = require('path')
+const fiex=require('./FiEx')
 require('dotenv').config()
+const os=require('node:os')
+const dns=require('node:dns')
 const bodyparser = require('body-parser')
 const app = express()
 const processor =require('./processor')
@@ -22,6 +25,12 @@ app.post('/initapp',processor.initapp)
 app.post('/saveapp',processor.saveapp)
 app.get('/loadapps',processor.loadapps)
 app.post('/saveapps',processor.saveapps)
-app.listen(process.env.PORT || 2000,process.env.IP,()=>{
-    console.log('we are live on '+process.env.PORT || 2000)
+
+dns.lookup(os.hostname(),{'family':4},(err,addr)=>{
+    app.listen(process.env.APPPORT || 2000,addr,()=>{
+        console.log(`we are live on http://${addr}:${process.env.PORT}`)
+    })
+    fiex.fiex.listen(process.env.FPORT,addr,()=>{
+        console.log(`we are live on http://${addr}:${process.env.PORT}`)
+    })
 })

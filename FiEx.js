@@ -7,25 +7,23 @@ const corsoptions ={
     origin:'*',
     optionsSuccessStatus:200
 }
-const app = express()
-app.use(cors(corsoptions))
-app.use(bodyparser.urlencoded({extended:true}))
-app.use(bodyparser.json())
+const fiex = express()
+fiex.use(cors(corsoptions))
+fiex.use(bodyparser.urlencoded({extended:true}))
+fiex.use(bodyparser.json())
 
-app.get('/initdir',processor.initDir)
-app.get('/root',processor.root)
-app.get('/structure',processor.structure)
-app.get('/getdetails',processor.getdetails)
-app.delete('/delete',processor.deleteFile)
-app.post('/createfolder',processor.createFolder)
-app.put('/rename',processor.rename)
-app.get('/getchildren',processor.getChildren)
-app.post('/createfile',processor.createFile)
-app.get('/pkgupdate',processor.pkgupdate)
-app.get('/installPkg',processor.installPkg)
-app.get('/getFile',processor.getFile)
-app.listen(2002,()=>{
-    console.log('FiEx live on 2002')
-})
+fiex.get('/initdir',processor.initDir)
+fiex.get('/root',processor.root)
+fiex.get('/structure',processor.structure)
+fiex.get('/getdetails',processor.getdetails)
+fiex.delete('/delete',processor.deleteFile)
+fiex.post('/createfolder',processor.createFolder)
+fiex.put('/rename',processor.rename)
+fiex.get('/getchildren',processor.getChildren)
+fiex.post('/createfile',processor.createFile)
+fiex.get('/pkgupdate',processor.pkgupdate)
+fiex.get('/installPkg',processor.installPkg)
+fiex.get('/getFile',processor.getFile)
 
+module.exports={fiex}
 

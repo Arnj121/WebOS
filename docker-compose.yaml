@@ -4,6 +4,7 @@ services:
     build: .
     ports:
       - 2000:2000
+      - 2002:2002
     volumes:
       - userfiles:/app/static/userfiles
 volumes:
