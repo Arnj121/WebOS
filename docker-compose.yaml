@@ -1,0 +1,15 @@
+services:
+  webos:
+    container_name: webOS
+    build: .
+    ports:
+      - 2000:2000
+    volumes:
+      - userfiles:/app/static/userfiles
+volumes:
+  userfiles:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: D:/webstorm/WebOS/static/userfiles
