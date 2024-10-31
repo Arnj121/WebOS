@@ -28,9 +28,9 @@ app.post('/saveapps',processor.saveapps)
 
 dns.lookup(os.hostname(),{'family':4},(err,addr)=>{
     app.listen(process.env.APPPORT || 2000,addr,()=>{
-        console.log(`we are live on http://${addr}:${process.env.PORT}`)
+        console.log(`we are live on http://${addr}:${process.env.APPPORT}`)
     })
     fiex.fiex.listen(process.env.FPORT,addr,()=>{
-        console.log(`we are live on http://${addr}:${process.env.PORT}`)
+        console.log(`we are live on http://${addr}:${process.env.FPORT}`)
     })
 })

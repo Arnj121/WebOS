@@ -3,13 +3,13 @@ const fs= require('fs')
 const db = require('./db')
 
 const getApps =(req,res)=>{
-    fs.readFile(path.join(__dirname,'apps.json'),'UTF-8',(err,data)=>{
+    fs.readFile(path.join(__dirname,'JSON','apps.json'),'UTF-8',(err,data)=>{
         res.send(data)
     })
 }
 const getApp =(req,res)=>{
     let appid = req.query.appid
-    fs.readFile(path.join(__dirname,'apps.json'),'UTF-8',(err,data)=>{
+    fs.readFile(path.join(__dirname,'JSON','apps.json'),'UTF-8',(err,data)=>{
         data = JSON.parse(data)
         res.send(data[appid])
     })
@@ -243,12 +243,12 @@ const initDir =(req,res)=>{
 const pkgupdate = (req,res)=>{
     let id = req.query.id
     let type = req.query.type
-    fs.readFile('./pkgs.json','UTF-8',(err,data)=>{
+    fs.readFile('./JSON/pkgs.json','UTF-8',(err,data)=>{
         if (err){
             res.send({'status':0,'result':'unable to get package details'})
         }
         else{
-            fs.cp('./pkgs.json',`./static/userfiles/${type}/${id}/home/bin/pkgs.json`,(err)=>{
+            fs.cp('./JSON/pkgs.json',`./static/userfiles/${type}/${id}/home/bin/pkgs.json`,(err)=>{
                 if(err) console.log(err);
             })
             res.send({'status':1,'result':data})

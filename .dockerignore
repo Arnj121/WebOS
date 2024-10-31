@@ -4,4 +4,6 @@ node_modules
 .dockerignore
 Dockerfile
 README.md
-docker-compose.yaml
+docker-compose-webos.yaml
+screenshots.pdf
+.gitignore

@@ -1,6 +1,4 @@
 node_modules
 .dockerignore
-dockerfile
 .idea
-initIP.js
 .env

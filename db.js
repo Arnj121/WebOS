@@ -19,6 +19,7 @@ if(getDb()==null)
             console.log(err);
         else {
             state.db = client.db(dbname)
+            console.log('database connected')
         }
     })
 
