@@ -1,4 +1,6 @@
 #!/bin/bash
 cd /home/ec2-user/app
-npm install
+node app.js &
+cd /home/ec2-user/fonty
+node server.js &
 

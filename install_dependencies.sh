@@ -7,3 +7,4 @@ mkdir fonty
 cd /home/ec2-user/fonty
 git clone https://github.com/arnj121/fonty
 npm install
+node initIP
