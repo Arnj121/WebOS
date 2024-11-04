@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/ec2-user/app
-node app.js &
+pm2 start app.js
 cd /home/ec2-user/fonty
-node server.js &
+pm2 start server.js
 

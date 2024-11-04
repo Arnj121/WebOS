@@ -157,12 +157,12 @@ class TaskManager{
                 let style = document.createElement('link')
                 let script = document.createElement('script')
                 if(appmanager.Apps[appId].sys) {
-                    style.href = `http://10.107.121.16:2000/apps/sys/${appId}/${appId}.css`
-                    script.src = `http://10.107.121.16:2000/apps/sys/${appId}/${appId}.js`
+                    style.href = `http://98.81.128.64:2000/apps/sys/${appId}/${appId}.css`
+                    script.src = `http://98.81.128.64:2000/apps/sys/${appId}/${appId}.js`
                 }
                 else {
-                    style.href = `http://10.107.121.16:2000/apps/custom/${appId}/${appId}.css`
-                    script.src = `http://10.107.121.16:2000/apps/custom/${appId}/${appId}.js`
+                    style.href = `http://98.81.128.64:2000/apps/custom/${appId}/${appId}.css`
+                    script.src = `http://98.81.128.64:2000/apps/custom/${appId}/${appId}.js`
                 }
                 style.id = appId+'-css';script.id=appId+'-js'
                 style.rel = 'stylesheet';style.type= 'text/css';
@@ -201,7 +201,7 @@ class TaskManager{
 class AppManager{
     Apps={
         njk2d4kd:{
-            code:'http://10.107.121.16:2000/apps/sys/njk2d4kd/njk2d4kd.html',
+            code:'http://98.81.128.64:2000/apps/sys/njk2d4kd/njk2d4kd.html',
             iconTpe:'fa',
             iconSrc:'fal fa-cog',
             appname:'Settings',
@@ -216,7 +216,7 @@ class AppManager{
             notification:1
         },
         df3mk3lm:{
-            code:'http://10.107.121.16:2000/apps/sys/df3mk3lm/df3mk3lm.html',
+            code:'http://98.81.128.64:2000/apps/sys/df3mk3lm/df3mk3lm.html',
             iconTpe: 'fa',
             iconSrc: 'fal fa-tasks-alt',
             appname:'Task manager',
@@ -231,7 +231,7 @@ class AppManager{
             notification:1
         },
         dfo3imf3:{
-            code:'http://10.107.121.16:2000/apps/sys/dfo3imf3/dfo3imf3.html',
+            code:'http://98.81.128.64:2000/apps/sys/dfo3imf3/dfo3imf3.html',
             iconTpe:'fa',
             iconSrc: 'fab fa-app-store',
             appname:'App store',
@@ -247,7 +247,7 @@ class AppManager{
             notification:1
         },
         njk39c3ce: {
-            code: 'http://10.107.121.16:2000/apps/sys/njk39c3ce/njk39c3ce.html',
+            code: 'http://98.81.128.64:2000/apps/sys/njk39c3ce/njk39c3ce.html',
             iconTpe: 'fa',
             iconSrc: 'fal fa-calculator-alt',
             appname: 'calculator',
@@ -262,7 +262,7 @@ class AppManager{
             notification:1
         },
         xo23qwrr: {
-            code: 'http://10.107.121.16:2000/apps/sys/xo23qwrr/xo23qwrr.html',
+            code: 'http://98.81.128.64:2000/apps/sys/xo23qwrr/xo23qwrr.html',
             iconTpe: 'fa',
             iconSrc: 'fal fa-image',
             appname: 'Image viewer',
@@ -277,7 +277,7 @@ class AppManager{
             notification:1
         },
         oermfo3f:{
-            code: 'http://10.107.121.16:2000/apps/sys/oermfo3f/oermfo3f.html',
+            code: 'http://98.81.128.64:2000/apps/sys/oermfo3f/oermfo3f.html',
             iconTpe: 'fa',
             iconSrc: 'fal fa-clock',
             appname: 'Clock',
@@ -292,7 +292,7 @@ class AppManager{
             notification:1
         },
         cal2f4f43:{
-            code: 'http://10.107.121.16:2000/apps/sys/cal2f4f43/cal2f4f43.html',
+            code: 'http://98.81.128.64:2000/apps/sys/cal2f4f43/cal2f4f43.html',
             iconTpe: 'fa',
             iconSrc: 'fal fa-calendar-alt',
             appname: 'Calendar',
@@ -307,7 +307,7 @@ class AppManager{
             notification:1
         },
         fil23ex45:{
-            code: 'http://10.107.121.16:2000/apps/sys/fil23ex45/fil23ex45.html',
+            code: 'http://98.81.128.64:2000/apps/sys/fil23ex45/fil23ex45.html',
             iconTpe: 'fa',
             iconSrc: 'fal fa-folder',
             appname: 'Files',
@@ -322,7 +322,7 @@ class AppManager{
             notification:1
         },
         ter243min: {
-            code: 'http://10.107.121.16:2000/apps/sys/ter243min/ter243min.html',
+            code: 'http://98.81.128.64:2000/apps/sys/ter243min/ter243min.html',
             iconTpe: 'fa',
             iconSrc: 'far fa-terminal',
             appname: 'Terminal',
@@ -424,7 +424,7 @@ class AppManager{
                 }
             }
         }
-        xhr.open('GET','http://10.107.121.16:2000/loadapps?email='+user.getEmail())
+        xhr.open('GET','http://98.81.128.64:2000/loadapps?email='+user.getEmail())
         xhr.send()
     }
 
@@ -503,7 +503,7 @@ class CommandLine{
     temp = Object.keys(this.cmdLib)
     history=[]
     packagesAvailable={}
-    cmdLibLoc='http://10.107.121.16:2000/apps/sys/ter243min/cmdlibs/'
+    cmdLibLoc='http://98.81.128.64:2000/apps/sys/ter243min/cmdlibs/'
     //TODO create environmental variables and file locations for the global commands
     getCWD(){
         console.log(this.session)
@@ -534,7 +534,7 @@ class CommandLine{
     LoadCmdFiles(file=0,type=0,id=0){
         if (file!=0){
             let script = document.createElement('script')
-            script.src = `http://10.107.121.16:2000/userfiles/${type}/${id}/home/bin/${file}.js`
+            script.src = `http://98.81.128.64:2000/userfiles/${type}/${id}/home/bin/${file}.js`
             document.head.append(script)
             this.cmdLib[file]=`${file}(options,aargs)`
             console.log(this.cmdLib)
@@ -604,7 +604,7 @@ class System{
         background: {
             backgroundimage: 1,
             backgroundcolor: '#f08282',
-            backgroundurl: 'http://10.107.121.16:2000/main/default.png',
+            backgroundurl: 'http://98.81.128.64:2000/main/default.png',
         },
         appdrawer: {
             onlyhome: 0,
@@ -661,7 +661,7 @@ class System{
         background: {
             backgroundimage: 1,
             backgroundcolor: '#f08282',
-            backgroundurl: 'http://10.107.121.16:2000/main/default.png',
+            backgroundurl: 'http://98.81.128.64:2000/main/default.png',
         },
         appdrawer: {
             onlyhome: 0,
@@ -1169,7 +1169,7 @@ class System{
                     //TODO:save settings or default settings
                 }
             }
-            xhr.open('POST', 'http://10.107.121.16:2000/signup')
+            xhr.open('POST', 'http://98.81.128.64:2000/signup')
             xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8')
             xhr.send(JSON.stringify({
                 'email': userdetail['email'],
@@ -1201,7 +1201,7 @@ class System{
             }
 
         }
-        xhr.open('POST','http://10.107.121.16:2000/login')
+        xhr.open('POST','http://98.81.128.64:2000/login')
         xhr.setRequestHeader('Content-Type','application/json;charset=UTF-8')
         xhr.send(JSON.stringify({'email':email,'password':password}))
     }
@@ -1229,7 +1229,7 @@ class DataManager{
                 console.log(res)
             }
         }
-        xhr.open('POST','http://10.107.121.16:2000/initapp')
+        xhr.open('POST','http://98.81.128.64:2000/initapp')
         xhr.setRequestHeader('Content-Type','application/json;charset=UTF-8')
         xhr.send(JSON.stringify({'email':user.getEmail(),'apps':appmanager.Apps,'executors':appmanager.executors}))
     }
@@ -1242,7 +1242,7 @@ class DataManager{
                 console.log(res)
             }
         }
-        xhr.open('POST','http://10.107.121.16:2000/saveapp')
+        xhr.open('POST','http://98.81.128.64:2000/saveapp')
         xhr.setRequestHeader('Content-Type','application/json;charset=UTF-8')
         xhr.send(JSON.stringify({'email':user.getEmail(),'app':app,'executors':appmanager.executors}))
     }
@@ -1260,7 +1260,7 @@ class DataManager{
                     return true
                 }
             }
-            xhr.open('POST', 'http://10.107.121.16:2000/savedata')
+            xhr.open('POST', 'http://98.81.128.64:2000/savedata')
             xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8')
             xhr.send(JSON.stringify({'email': user.getEmail(), 'appId': appId, 'data': data}))
         }
@@ -1276,7 +1276,7 @@ class DataManager{
                     if (callback) callback(res.data)
                 }
             }
-            xhr.open('GET', `http://10.107.121.16:2000/loaddata?appId=${appId}&email=${user.getEmail()}`)
+            xhr.open('GET', `http://98.81.128.64:2000/loaddata?appId=${appId}&email=${user.getEmail()}`)
             xhr.send()
         }
         else{
@@ -1304,21 +1304,21 @@ class FileManager{
         lastupdated:0,
     }
     initDir(id){
-        fetch(`http://10.107.121.16:2002/initdir?id=${id}`,{method:"GET"})
+        fetch(`http://98.81.128.64:2002/initdir?id=${id}`,{method:"GET"})
     }
 
     async getChildren(path){
         let r;
         let userOrGuest = user.IsloggedIn()?'users' : 'guest'
         let id = user.IsloggedIn()?user.getUniqueId() : user.guestId
-        await fetch(`http://10.107.121.16:2002/getchildren?uniqueId=${id}&path=${path}&userguest=${userOrGuest}`,{method:'GET'})
+        await fetch(`http://98.81.128.64:2002/getchildren?uniqueId=${id}&path=${path}&userguest=${userOrGuest}`,{method:'GET'})
             .then(res=>res.json())
             .then((res)=>{r=res})
         return r;
     }
     // async getParent(child){
     //     let r;
-    //     await fetch(`http://10.107.121.16:2002/getparent?email=${user.getEmail()}&name=${child}`,{method:'GET'})
+    //     await fetch(`http://98.81.128.64:2002/getparent?email=${user.getEmail()}&name=${child}`,{method:'GET'})
     //         .then(res=>res.json())
     //         .then((res)=>{r=res})
     //     return r;
@@ -1327,7 +1327,7 @@ class FileManager{
         let r;
         let userOrGuest = user.IsloggedIn()?'users' : 'guest'
         let id = user.IsloggedIn()?user.getUniqueId() : user.guestId
-        await fetch(`http://10.107.121.16:2002/getdetails?userguest=${userOrGuest}&path=${path}&uniqueId=${id}`,{method:'GET'})
+        await fetch(`http://98.81.128.64:2002/getdetails?userguest=${userOrGuest}&path=${path}&uniqueId=${id}`,{method:'GET'})
             .then(res=>res.json())
             .then((res)=>{r=res})
         return r;
@@ -1336,7 +1336,7 @@ class FileManager{
         let r;
         let userOrGuest = user.IsloggedIn()?'users' : 'guest'
         let id = user.IsloggedIn()?user.getUniqueId() : user.guestId
-        await fetch(`http://10.107.121.16:2002/root?userguest=${userOrGuest}uniqueId=${id}`)
+        await fetch(`http://98.81.128.64:2002/root?userguest=${userOrGuest}uniqueId=${id}`)
             .then(res=>res.json())
             .then((res)=>{r=res})
         return r
@@ -1345,7 +1345,7 @@ class FileManager{
         let r;
         let userOrGuest = user.IsloggedIn()?'users' : 'guest'
         let id = user.IsloggedIn()?user.getUniqueId() : user.guestId
-        await fetch(`http://10.107.121.16:2002/createfolder?userguest=${userOrGuest}&uniqueId=${id}&path=${path}&name=${name}`,{method:'post'})
+        await fetch(`http://98.81.128.64:2002/createfolder?userguest=${userOrGuest}&uniqueId=${id}&path=${path}&name=${name}`,{method:'post'})
             .then(res=>res.json())
             .then((res)=>{r=res})
         return r;
@@ -1354,7 +1354,7 @@ class FileManager{
         let r;
         let userOrGuest = user.IsloggedIn()?'users' : 'guest'
         let id = user.IsloggedIn()?user.getUniqueId() : user.guestId
-        await fetch(`http://10.107.121.16:2002/createfile?userguest=${userOrGuest}&uniqueId=${id}&path=${path}&name=${name}`,{method:'GET'})
+        await fetch(`http://98.81.128.64:2002/createfile?userguest=${userOrGuest}&uniqueId=${id}&path=${path}&name=${name}`,{method:'GET'})
             .then(res=>res.json())
             .then((res)=>{r=res})
         return r;
@@ -1363,7 +1363,7 @@ class FileManager{
         let r;
         let userOrGuest = user.IsloggedIn()?'users' : 'guest'
         let id = user.IsloggedIn()?user.getUniqueId() : user.guestId
-        await fetch(`http://10.107.121.16:2002/delete?userguest=${userOrGuest}&uniqueId=${id}&name=${path}`,{method:'GET'})
+        await fetch(`http://98.81.128.64:2002/delete?userguest=${userOrGuest}&uniqueId=${id}&name=${path}`,{method:'GET'})
             .then(res=>res.json())
             .then((res)=>{r=res})
         return r;
@@ -1372,7 +1372,7 @@ class FileManager{
         let r;
         let userOrGuest = user.IsloggedIn()?'users' : 'guest'
         let id = user.IsloggedIn()?user.getUniqueId() : user.guestId
-        await fetch(`http://10.107.121.16:2002/rename?userguest=${userOrGuest}&uniqueId=${id}&src=${src}&des=${des}`,{method:'GET'})
+        await fetch(`http://98.81.128.64:2002/rename?userguest=${userOrGuest}&uniqueId=${id}&src=${src}&des=${des}`,{method:'GET'})
             .then(res=>res.json())
             .then((res)=>{r=res})
         return r;
@@ -1423,7 +1423,7 @@ async function signup() {
             } else document.getElementById('signup-error').style.display = 'inline'
         }
     }
-    xhr.open('POST', 'http://10.107.121.16:2000/signup')
+    xhr.open('POST', 'http://98.81.128.64:2000/signup')
     xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8')
     xhr.send(JSON.stringify({
         'email': email,
@@ -1462,7 +1462,7 @@ function login(){
         }
 
     }
-    xhr.open('POST','http://10.107.121.16:2000/login')
+    xhr.open('POST','http://98.81.128.64:2000/login')
     xhr.setRequestHeader('Content-Type','application/json;charset=UTF-8')
     xhr.send(JSON.stringify({'email':email,'password':password}))
 }

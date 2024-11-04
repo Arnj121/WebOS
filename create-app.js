@@ -89,7 +89,7 @@ fs.readFile(path.join(__dirname,'apps.json'),'UTF-8',(err,data)=>{
     else {
         console.log('Copy and paste this in the apps.json')
         console.log(`"${appid}":{\n` +
-            `       \"code\": 'http://localhost:2000/apps/custom/${appid}/${appid}.html',\n` +
+            `       \"code\": 'http://3.80.63.179:2000/apps/custom/${appid}/${appid}.html',\n` +
             "       \"iconTpe\": \"fa\",\n" +
             "       \"iconSrc\": \"fal fa-app\",\n" +
             `       \"appname\": ${appname},\n` +
@@ -103,7 +103,7 @@ fs.readFile(path.join(__dirname,'apps.json'),'UTF-8',(err,data)=>{
             "        }\n" +
             "    }")
         data[appid] = {
-            "code": `http://localhost:2000/apps/custom/${appid}/${appid}.html`,
+            "code": `http://3.80.63.179:2000/apps/custom/${appid}/${appid}.html`,
             "iconTpe": "fa",
             "iconSrc": "fal fa-app",
             "appname": appname,
