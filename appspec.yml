@@ -4,10 +4,6 @@ files:
   - source: /
     destination: /home/ec2-user/app
 hooks:
-  ApplicationStop:
-    - location: stop_app.sh
-      timeout: 30
-      runas: root
   BeforeInstall:
     - location: install_node.sh
       timeout: 30
